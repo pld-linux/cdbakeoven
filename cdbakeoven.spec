@@ -75,7 +75,7 @@ echo "[Desktop Entry]\nName=CDBakeOven\nIcon=cdbakeoven" \
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS 
+%doc AUTHORS
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/kde3/*
 %{_datadir}/apps/*
