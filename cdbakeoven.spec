@@ -20,7 +20,7 @@ Requires:	cdparanoia-III
 Requires:	kdelibs >= 3.1
 Requires:	vorbis-tools >= 1.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Obsoletes:      kdeutils-%{name}
+Obsoletes:	kdeutils-%{name}
 
 %define		_htmldir	/usr/share/doc/kde/HTML
 
