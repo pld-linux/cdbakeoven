@@ -1,11 +1,14 @@
+
+%define		beta	beta2
+
 Summary:	Intuitive tool for burning CDs
 Summary(pl):	Intuicyjne narzêdzie do wypalania CD
 Name:		cdbakeoven
-Version:	1.8.9
-Release:	1
+Version:	2.0
+Release:	0.1%{beta}
 License:	GPL
 Group:		X11/Applications
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-i18n-%{version}%{beta}.tar.bz2
 URL:		http://cdbakeoven.sourceforge.net/
 BuildRequires:	bzip2
 BuildRequires:	kdelibs-devel >= 3.0
@@ -40,7 +43,7 @@ dostêp do wiêkszo¶ci ich opcji. Czyni to tworzenie no¶ników o
 profesjonalnej jako¶ci równie ³atwym jak klikanie myszk±.
 
 %prep
-%setup -q
+%setup -q -n %{name}-i18n-%{version}%{beta}
 
 %build
 kde_htmldir="%{_htmldir}"; export kde_htmldir
@@ -61,14 +64,15 @@ install -d \
 
 ALD=$RPM_BUILD_ROOT%{_applnkdir}
 mv -f $ALD/{Settings/[!K]*,Settings/KDE}
-mv -f $ALD/Utilities/{[!C]*,CD-RW}
+mv -f $ALD/Multimedia $ALD/Utilities/CD-RW
 echo "[Desktop Entry]\nName=CDBakeOven\nIcon=cdbakeoven" \
     > $ALD/Settings/KDE/CDBakeOven/.directory
 
+%find_lang %{name}
 %clean
 %{!?_without_clean:rm -rf $RPM_BUILD_ROOT}
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING
 %attr(755,root,root) %{_bindir}/*
