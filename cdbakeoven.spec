@@ -5,14 +5,14 @@ Summary:	Intuitive tool for burning CDs
 Summary(pl):	Intuicyjne narzêdzie do wypalania CD
 Name:		cdbakeoven
 Version:	2.0
-Release:	0.1%{beta}
+Release:	0.%{beta}.2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-i18n-%{version}%{beta}.tar.bz2
 URL:		http://cdbakeoven.sourceforge.net/
 BuildRequires:	bzip2
-BuildRequires:	kdelibs-devel >= 3.0
-Requires:	kdelibs >= 3.0
+BuildRequires:	kdelibs-devel >= 3.1
+Requires:	kdelibs >= 3.1
 Requires:	cdrtools
 Requires:	cdrtools-cdda2wav
 Requires:	cdrtools-mkisofs
