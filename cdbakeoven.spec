@@ -9,6 +9,7 @@ Release:	0.%{beta}.3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-i18n-%{version}%{beta}.tar.bz2
+# Source0-md5:	52c2e0af4764f13ede315b1a0373236c
 URL:		http://cdbakeoven.sourceforge.net/
 BuildRequires:	bzip2
 BuildRequires:	kdelibs-devel >= 3.1
