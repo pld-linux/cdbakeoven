@@ -13,14 +13,14 @@ Source0:	http://dl.sourceforge.net/%{name}/%{name}-i18n-%{version}%{beta}.tar.bz
 URL:		http://cdbakeoven.sourceforge.net/
 BuildRequires:	bzip2
 BuildRequires:	kdelibs-devel >= 3.1
-Requires:	kdelibs >= 3.1
 Requires:	cdrtools
 Requires:	cdrtools-cdda2wav
 Requires:	cdrtools-mkisofs
 Requires:	cdparanoia-III
+Requires:	kdelibs >= 3.1
 Requires:	vorbis-tools >= 1.0
-Obsoletes:      kdeutils-%{name}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Obsoletes:      kdeutils-%{name}
 
 %define		_htmldir	/usr/share/doc/kde/HTML
 
@@ -58,11 +58,10 @@ CXXFLAGS="%{rpmcflags}" CFLAGS="%{rpmcflags}" ./configure \
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_applnkdir}/{Settings/KDE,Utilities/CD-RW}
 
-install -d \
-    $RPM_BUILD_ROOT%{_applnkdir}/{Settings/KDE,Utilities/CD-RW}
-
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 ALD=$RPM_BUILD_ROOT%{_applnkdir}
 mv -f $ALD/{Settings/[!K]*,Settings/KDE}
