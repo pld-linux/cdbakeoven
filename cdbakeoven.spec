@@ -67,7 +67,7 @@ ALD=$RPM_BUILD_ROOT%{_applnkdir}
 mv -f $ALD/{Settings/[!K]*,Settings/KDE}
 mv -f $ALD/Multimedia $ALD/Utilities/CD-RW
 echo "[Desktop Entry]\nName=CDBakeOven\nIcon=cdbakeoven" \
-    > $ALD/Settings/KDE/CDBakeOven/.directory
+	> $ALD/Settings/KDE/CDBakeOven/.directory
 
 %find_lang %{name}
 %clean
