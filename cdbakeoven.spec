@@ -39,8 +39,8 @@ w u¿yciu interfejsem. CDBO pozwala tworzyæ CD z danymi lub muzyk± w
 najbardziej intuicyjny sposób, pozwalaj±c kontrolowaæ wszystkie
 aspekty procesu. Zosta³ zbudowany na bazie doskonale znanych programów
 ,,cdrecord'', ,,mkisofs'', ,,cdda2wav'' oraz ,,cdparanoia'' daj±c
-dostêp do wiêkszo¶ci ich opcji. Czyni to no¶ników o profesjonalnej
-jako¶ci równie ³atwym jak klikanie myszk±.
+dostêp do wiêkszo¶ci ich opcji. Czyni to tworzenie no¶ników o
+profesjonalnej jako¶ci równie ³atwym jak klikanie myszk±.
 
 %prep
 %setup -q
