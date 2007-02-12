@@ -2,7 +2,7 @@
 %define		beta	beta2
 
 Summary:	Intuitive tool for burning CDs
-Summary(pl.UTF-8):   Intuicyjne narzędzie do wypalania CD
+Summary(pl.UTF-8):	Intuicyjne narzędzie do wypalania CD
 Name:		cdbakeoven
 Version:	2.0
 Release:	0.%{beta}.3
