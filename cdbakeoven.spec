@@ -2,7 +2,7 @@
 %define		beta	beta2
 
 Summary:	Intuitive tool for burning CDs
-Summary(pl):	Intuicyjne narzêdzie do wypalania CD
+Summary(pl.UTF-8):   Intuicyjne narzÄ™dzie do wypalania CD
 Name:		cdbakeoven
 Version:	2.0
 Release:	0.%{beta}.3
@@ -34,15 +34,15 @@ process. It is built on top of very well known 'cdrecord', 'mkisofs',
 utilities provide. This makes creating professional quality media as
 easy as making a few mouse clicks.
 
-%description -l pl
-CD Bake Oven zosta³ zaprojektowany w jednym celu: po³±czyæ
-uniwersalno¶æ i stabilno¶æ doskona³ych narzêdzi linii poleceñ z ³atwym
-w u¿yciu interfejsem. CDBO pozwala tworzyæ CD z danymi lub muzyk± w
-najbardziej intuicyjny sposób, pozwalaj±c kontrolowaæ wszystkie
-aspekty procesu. Zosta³ zbudowany na bazie doskonale znanych programów
-,,cdrecord'', ,,mkisofs'', ,,cdda2wav'' oraz ,,cdparanoia'' daj±c
-dostêp do wiêkszo¶ci ich opcji. Czyni to tworzenie no¶ników o
-profesjonalnej jako¶ci równie ³atwym jak klikanie myszk±.
+%description -l pl.UTF-8
+CD Bake Oven zostaÅ‚ zaprojektowany w jednym celu: poÅ‚Ä…czyÄ‡
+uniwersalnoÅ›Ä‡ i stabilnoÅ›Ä‡ doskonaÅ‚ych narzÄ™dzi linii poleceÅ„ z Å‚atwym
+w uÅ¼yciu interfejsem. CDBO pozwala tworzyÄ‡ CD z danymi lub muzykÄ… w
+najbardziej intuicyjny sposÃ³b, pozwalajÄ…c kontrolowaÄ‡ wszystkie
+aspekty procesu. ZostaÅ‚ zbudowany na bazie doskonale znanych programÃ³w
+,,cdrecord'', ,,mkisofs'', ,,cdda2wav'' oraz ,,cdparanoia'' dajÄ…c
+dostÄ™p do wiÄ™kszoÅ›ci ich opcji. Czyni to tworzenie noÅ›nikÃ³w o
+profesjonalnej jakoÅ›ci rÃ³wnie Å‚atwym jak klikanie myszkÄ….
 
 %prep
 %setup -q -n %{name}-i18n-%{version}%{beta}
