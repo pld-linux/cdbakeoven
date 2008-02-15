@@ -78,7 +78,7 @@ echo "[Desktop Entry]\nName=CDBakeOven\nIcon=cdbakeoven" \
 %doc AUTHORS
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/kde3/*
-%{_datadir}/apps/*
+%{_datadir}/apps/* # specify excplicit dirs here (to avoid packaging kde dirs)
 %{_datadir}/mimelnk/application/*
 %{_datadir}/mimelnk/inode/*
 %{_pixmapsdir}/*/*/*/*
