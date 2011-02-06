@@ -70,8 +70,9 @@ echo "[Desktop Entry]\nName=CDBakeOven\nIcon=cdbakeoven" \
 	> $ALD/Settings/KDE/CDBakeOven/.directory
 
 %find_lang %{name}
+
 %clean
-%{!?_without_clean:rm -rf $RPM_BUILD_ROOT}
+rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
